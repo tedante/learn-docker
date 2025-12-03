@@ -114,7 +114,7 @@ Example:
 
 ```js
 mysql.createConnection({
-  host: "db", // NOT localhost
+  host: "db", // mongodb container name as hostname
   user: "root",
   password: "secret",
 });
