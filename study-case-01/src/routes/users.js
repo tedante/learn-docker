@@ -3,10 +3,7 @@ const router = express.Router();
 const User = require("../models/User");
 
 router.get("/", async (req, res) => {
-  const users = {
-    name: "John Doe",
-    email: "john.doe@example.com"
-  }
+  const users = await User.find();
   res.json(users);
 });
 
